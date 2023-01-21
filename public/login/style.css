@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+  
+  body {
+    background:;
+  }
+@keyframes background{
+    100%{
+      background-size: 4000px 1000px;
+    }
+  }
+  .login-new{
+    
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0e0_zAPC4-x1ETc6lFIZFqgmwzw-mm3WJqE3QwMmeEjaNztw6qh6DQcljqrpe3a0ALtE&usqp=CAU'); */
+    background: linear-gradient(45deg, #ededed, #5656d4);
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #f9f9f9;
+    font-family: "Eulid Circular A";
+    animation: background 10s infinite alternate linear;
+  }
+  @media(width>=500px){
+      body{
+        padding: 0;
+      }
+  }
+  
+  .login{
+    width: 90%;
+    padding: 70px 30px 44px;
+    border-radius: 22px;
+    background: #161616;
+    text-align: center;
+  }
+  @media(width>=450px){
+    .login{
+      width: 380px;
+    }
+  }
+  .avatar{
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg,#157ae1,#c7a1ff);
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+  }
+  .avatar> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #161616;
+  }
+  .login>h2{
+    font: 36px;
+    font-weight: 500;
+    margin: 0 0 4px;
+  }
+  .login>h3{
+    color: rgba(255,255,255,.38);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+  
+  }
+  .login-forms{
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+  
+  }
+  .textbox{
+    width: 100%;
+    position: relative;
+  }
+  
+  .textbox span{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+    color: rgba(255,255,255,.38);
+  }
+  .login-forms input, .login-forms button{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius:8px ;
+  }
+  .login-forms input{
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.1);
+    font-size: 18px;
+    padding: 0 20px 0 50px;
+    color: inherit;
+  
+  }
+  .login-forms input:focus{
+    border-color: #157ae1;
+  }
+  .login-forms input:focus ~span{
+    color: #157ae1;
+  }
+  .login-forms button{
+    cursor: pointer;
+    background: #157ae1;
+    color: #f9f9f9;
+    border:0;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .login-forms a{
+    color: #157ae1;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+  }
+  .login-forms .submit{
+    width: 100px;
+  }
+
+
